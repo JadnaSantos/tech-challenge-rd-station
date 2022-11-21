@@ -46,6 +46,6 @@ Desenvolver uma tela
 Faça um clone desse repositório e acesse o diretório.
 
 ```bash
-$ git clonehttps://github.com/JadnaSantos/app-theMovie.git
+$ git clonehttps://https://github.com/JadnaSantos/tech-challenge-rd-station
 ```
 
