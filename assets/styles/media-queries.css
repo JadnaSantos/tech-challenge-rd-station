@@ -123,7 +123,7 @@
 
 
 @media (min-width: 767px) {
-    .cards-grid{ 
+    .cards-grid, .footer-grid{ 
         grid-template-columns: 1fr 1fr;
     }
 
@@ -134,8 +134,6 @@
     .play-video img {
         width: 328px;
     }
-
-    .footer-grid { grid-template-columns: 1fr 1fr; }
 
 }
 

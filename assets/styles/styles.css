@@ -643,9 +643,9 @@ footer {
 }
   
 .footer-grid {
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
+    display: grid;
+    justify-content: flex-end;
+    grid-template-columns: 1fr;
     gap: 50px;
     padding: 220px 15px 80px;
 }
@@ -666,18 +666,7 @@ footer {
     align-items: center;
     gap: 20px;
 } 
-  
-.social-link a {
-    background: hsla(0, 0%, 100%, 0.1);
-    width:  45px;
-    height: 45px;
-    display:flex;
-    justify-content: center;
-    align-items:     center;
-    border-radius: 4px;
-    transition: 0.25s ease;
-}
-  
+
   
 .social-link ion-icon {
     font-size: 20px;

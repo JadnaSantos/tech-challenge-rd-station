@@ -100,8 +100,6 @@ form.addEventListener("submit", (event) => {
 
   thankYouMessage.classList.add('show');
 
-  setTimeout(() => form.submit(), 1000);
-
   fetch('https://rdstation-signup-psel.herokuapp.com', {
     method: 'POST',
     body: payload
