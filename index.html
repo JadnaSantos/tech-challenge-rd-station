@@ -69,6 +69,7 @@
                 <div class="home-right">
 
                     <form id="form" method="post" class="form">
+                        <p id="thank-you-message">Obrigado! entraremos em contato.</p>
                         <h1>Comece seus 10 dias de teste grátis do RD Station Marketing!</h1>
 
                         <p>Não precisa cadastrar cartão de crédito. 😉 </p>
@@ -115,7 +116,7 @@
 
                         <div class="form-control">
                             <label for="options">Seu cargo de ocupação</label>
-                            <select id="options" name="options">
+                            <select id="options" name="options" required>
                                 <option value="" disabled selected>Selecione</option>
                                 <option value="apartment">Sócio(a) / CEO / Proprietário(a)</option>
                                 <option value="house">Diretor(a) de Vendas</option>
@@ -413,7 +414,7 @@
                         seus resultados e um brecossistema que apoia o seu negócio do planejamento à prática.
                     </p>
 
-                    <button class="btn-primary">
+                    <button class="btn btn-primary" id="create-account-yellow-button">
                         Crie Conta Gratuita
                     </button>
 
@@ -472,7 +473,7 @@
         
                 </div>
 
-                <button class="btn create-account">
+                <button class="btn create-account" id="create-account-blue-button">
                     Crie Conta Gratuita
                 </button>
         

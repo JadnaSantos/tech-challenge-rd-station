@@ -8,9 +8,9 @@ const select = document.getElementById('options');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
 const radio = document.getElementById('radio');
-
-const playVideo = document.getElementById('play')
-
+const thankYouMessage = document.querySelector('#thank-you-message');
+const buttonCreateAccountBlue = document.getElementById('create-account-blue-button')
+const buttonCreateAccountYellow = document.getElementById('create-account-yellow-button')
 
 navbarToggleBtn.addEventListener('click',() => {
 
@@ -42,7 +42,7 @@ function checkInputs() {
   if (passwordValue === "") {
     setErrorFor(password, "A senha é obrigatória.");
   } else if (!checkPassword(passwordValue)) {
-    setErrorFor(password, "A senha precisa ter no mínimo 6 caracteres a 10 caracteres.");
+    setErrorFor(password, "A senha precisa ter no mínimo 6 caracteres a 10 caracteres. Com uma letra maiúscula, minuscula e 1 numero");
   } else {
     setSuccessFor(password);
   }
@@ -87,7 +87,7 @@ function checkEmail(email) {
 
 
 function checkPassword(password) {
-  return /(?=(.*[0-9]))(?=.*[\!@#$%^&*()\\[\]{}\-_+=~`|:;"'<>,./?])(?=.*[a-z])(?=(.*[A-Z]))(?=(.*)).{8,}/.test(password)
+  return/(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W+)(?=^.{6,50}$).*$/g.test(password)
   
 }
 
@@ -96,9 +96,11 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const payload = new FormData(form)
-
-  console.log([...payload])
   checkInputs();
+
+  thankYouMessage.classList.add('show');
+
+  setTimeout(() => form.submit(), 1000);
 
   fetch('https://rdstation-signup-psel.herokuapp.com', {
     method: 'POST',
@@ -106,13 +108,20 @@ form.addEventListener("submit", (event) => {
   })
     .then(response => response.json())
     .then(data => console.log(data))
-    .catch(error => console.log(error));
+    .catch(error => console.error(error));
+
+  form.reset();
 });
 
-playVideo.addEventListener('click', () =>{
-  playVideo.classList.add('active');
-})
 
+buttonCreateAccountBlue.addEventListener('click', function() {
+  window.open("https://app.rdstation.com.br/signup", "_blank")
+});
+
+
+buttonCreateAccountYellow.addEventListener('click', function() {
+  window.open("https://app.rdstation.com.br/signup", "_blank")
+});
 
 
 

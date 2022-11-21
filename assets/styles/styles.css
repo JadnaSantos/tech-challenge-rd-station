@@ -370,6 +370,19 @@ html {
     border: 2px solid var(--color-bw-black);
 }
 
+#thank-you-message{
+    display: none;
+}
+
+#thank-you-message.show {
+    display: block;
+}
+
+#thank-you-message p {
+    color: var(--success-color)
+}
+
+
 .category { 
   padding: 80px 15px 0;
   background: var(--color-brand-primary);
@@ -500,11 +513,7 @@ html {
 
 .menu-four{
     background: var(--color-brand-primary);
-    padding: 80px 139px; 
-    display:flex;
-    justify-content: center;
-
-    align-items: center;
+    padding: 80px 15px;
 }
 
 .menu-four h1 {
@@ -518,24 +527,7 @@ html {
     margin-bottom: 15px;
 }
 
-.menu-four .btn-primary {
-    font-family: "Nunito Sans", sans-serif;
-    font-size: 1rem;
-    font-weight: 800;
-
-    position: relative;
-
-    border-radius: 1px;
-
-    box-shadow: 3px 7px 0px;
-    padding: 4px 13px;
-
-    color: var(--color-bw-black);
-    border: 2px solid var(--color-bw-black);
-
-    transition: 0.25s ease;
-    text-transform: uppercase;
-    overflow: hidden;
+.btn-primary {
     background: var(--color-highlight-mustard);
 }
 
@@ -625,6 +617,15 @@ html {
     background: var (--color-bw-white-gray-30);
 }
 
+.create-account {
+    background: var(--color-brand-menu);
+}
+
+.menu-five a {
+    text-decoration: none;
+    font: inherit;
+}
+
 .logos-brands-right{
     padding: 20px 15px 0; 
 }
@@ -635,9 +636,7 @@ html {
     padding: 40px;
 }
 
-.create-account {
-    background: var(--color-brand-menu);
-}
+
 
 footer { 
     background: var(--color-brand-menu);
