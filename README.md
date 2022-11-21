@@ -38,6 +38,11 @@ Desenvolver uma tela web onde o usuário poderam visualizar os serviços da RD S
 - [x] Os Botões "Criar conta Gratuita", devem redirencionar para uma nova aba
 - [x] Responsividade
 
+### Aprendizados 📕
+
+Neste desafio, tive a oportunidade de aprender muitas coisas legais e que me desafiaram bastante! No momento do envio do desafio 
+faltaram alguns requisitos, mas sigo desenvolvendo a aplicação. 🚀
+
 ### ⏳ Instalação e execução
 
 Faça um clone desse repositório e acesse o diretório.
