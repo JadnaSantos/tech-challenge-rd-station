@@ -26,7 +26,6 @@ Desenvolver uma tela web onde o usuário poderam visualizar os serviços da RD S
 - Uma letra minúscula
 - Um número
 - Ser iguais
-
 - [ ] Ainda no campo de senha e confirmação de senha, deverá existir a opção
       de ver o que está sendo escrito clicando no ícone do “olho”. Por padrão, os
       valores nestes campos devem vir como ocultos.
@@ -35,7 +34,6 @@ Desenvolver uma tela web onde o usuário poderam visualizar os serviços da RD S
 - [x] O formulário deve exibir um feedback "Obrigado!, entraremos em contato", 
 - A mensagem a permance junto com o formulário, após o envio o formulário é resetado.
 - [ ] Ao clicar no play do vídeo, deve ser aberto um modal com o vídeo em autoplay
-
 - [x] Rede Sociais - Os links das redes sociais devem abrir em nova aba
 - [x] Os Botões "Criar conta Gratuita", devem redirencionar para uma nova aba
 - [x] Responsividade
