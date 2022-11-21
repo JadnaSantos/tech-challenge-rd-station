@@ -2,14 +2,13 @@
 
 ## 🚀 Tecnologias
 
-- HTML
-- CSS 
-- JAVASCRIPT
+- Html
+- Css
+- JavaScript
 
 ### 💻 Sobre o projeto
 
-Desenvolver uma tela 
-
+Desenvolver uma tela web onde o usuário poderam visualizar os serviços da RD Station Marketing
 
 
 ### 🛠 Funcionalidades
