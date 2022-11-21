@@ -1,0 +1,169 @@
+@media (min-width: 1200px) {
+    .home-left { 
+        padding-bottom: 120px;
+    }
+
+    .section-play-video { 
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar { 
+        padding: 20px 30px;
+    }
+
+    .navbar-nav {
+        background: transparent;
+        position: static;
+        box-shadow: none;
+        padding: 0;
+        opacity: 1;
+        transform: scale(1);
+        pointer-events: all;
+        display:     flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nav-item:not(:last-child) a { 
+        border-bottom: none;
+    }
+
+    .nav-toggle-btn { 
+        display: none;
+    }
+
+    .navbar .btn { 
+        display: block;
+    }
+
+    .navbar .btn  {
+        display: flex;
+    }
+
+
+    .home {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .home::before {
+        top:  -100px;
+        left: -300px;
+    }
+
+    .home::after { 
+        top: 0;
+    }
+
+    .home-left { 
+        margin-bottom: 17rem;
+    }
+
+    .home h1, p { 
+        text-align: left;
+    }
+
+    .home h1, p { 
+        margin: 0 0 30px;
+    }
+
+
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: end;
+        gap: 40px;
+    }
+
+    .about-left { 
+        margin-left: -70px;
+    }
+
+    .about-left img { 
+        max-width: unset;
+    }
+  
+    .about-right { 
+        padding-top: 0;
+    }
+
+    .section-cards { position: relative; }
+
+    .cards-grid{ 
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 0;
+    }
+
+    .section-play-video {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .section-play-video .section-play-video-left {
+        margin-bottom: 0;
+    }
+
+    .menu-five{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .footer-grid { 
+        grid-template-columns: 2fr 1fr 1fr 2fr;
+     
+    }
+    
+}
+
+
+@media (min-width: 767px) {
+    .cards-grid{ 
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .section-play-video .play {
+        right: -100px;
+    }
+
+    .play-video img {
+        width: 328px;
+    }
+
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+
+}
+
+@media (min-width: 575px) {
+    .section-play-video .section-play-video-right {
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 375px) {
+    .section-play-video .section-play-video-left {
+        margin-bottom: 2rem;
+    }
+    
+    .section-play-video .section-play-video-left {
+        margin-bottom: 2rem;
+    }
+
+    .play-video img {
+        width: 328px;
+    }
+
+    .logos-brands-cardsa img {
+        width: 328px;
+    }
+}
+
+
+
+
