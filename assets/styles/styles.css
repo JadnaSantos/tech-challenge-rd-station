@@ -644,7 +644,7 @@ footer {
   
 .footer-grid {
     display: grid;
-    justify-content: flex-end;
+    justify-content: end;
     grid-template-columns: 1fr;
     gap: 50px;
     padding: 220px 15px 80px;
@@ -663,9 +663,11 @@ footer {
   
 .social-link {
     display:flex;
+    justify-content: end;
     align-items: center;
     gap: 20px;
 } 
+
 
   
 .social-link ion-icon {
